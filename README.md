@@ -1,1 +1,11 @@
-# ALXprodev-advanced_git
+# ALX Prodev Advanced Git
+This repository is for practicing the GitFlow workflow.
+
+ALX Prodev Advanced Git - GitFlow PracticeProject OverviewThis repository serves as a practical demonstration of the GitFlow branching model. It is designed to simulate a professional development workflow where multiple features are developed in parallel, integrated, and released in a controlled manner.The goal of this project is to practice advanced Git commands, branching strategies, and collaboration workflows essential for modern software engineering teams.Branching StrategyWe utilize the GitFlow workflow to manage our development process. Below is the structure of our branches:Core Branchesmain: The production-ready branch. This branch contains the official release history and is always in a deployable state.develop: The integration branch for features. This is the main working branch where all feature branches are merged before a release.Feature BranchesFeature branches are used to develop new features for the upcoming release. They branch off from develop and must merge back into develop.feature/implement-login:Purpose: scaffolding and implementation of the user login functionality.Status: Contains initial setup for the login page.feature/implement-signup:Purpose: Development of the user registration and signup system.Status: In progress.Release Branchesrelease: Supports preparation of a new production release. It allows for minor bug fixes and preparing meta-data for a release (version number, build dates, etc.).Workflow SummaryInitialization: The repository was initialized with git flow init to set up the standard branch structure.Feature Development:Features are started using git flow feature start <feature_name>.Work is committed to the specific feature branch.Once complete, features are finished and merged back into develop.Releasing:When develop is ready for production, a release branch is created.Final testing and documentation happen here.The release is merged into main and tagged.Getting StartedTo contribute or test this workflow locally:Clone the repository:git clone [https://github.com/FREDDANJUMA247/ALXprodev-advanced_git.git](https://github.com/FREDDANJUMA247/ALXprodev-advanced_git.git)
+cd ALXprodev-advanced_git
+Install Git Flow (if not installed):Follow instructions for your specific OS (e.g., sudo apt-get install git-flow).Initialize Git Flow:git flow init -d
+Switch to a branch:git checkout develop
+# or
+git checkout feature/implement-login
+
+Stashed changes
